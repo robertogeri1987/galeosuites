@@ -1,0 +1,32 @@
+{
+	"name": "acf/immagine-tre-colonne",
+	"title": "Immagine su tre colonne",
+	"description": "Un blocco con tre colonne di immagini su desktop.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"immagine-tre-colonne"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

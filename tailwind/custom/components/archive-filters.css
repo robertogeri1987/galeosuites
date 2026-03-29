@@ -1,0 +1,271 @@
+.archive-filters {
+
+	&.expanded {
+		@screen mdd {
+			.archive-filters__ul {
+				visibility: visible;
+				left: 0;
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+	}
+
+	&--vertical {
+		@screen md {
+			.filter-open {
+				display: none;
+			}
+		}
+
+		.widgettitle.widget-title {
+			@screen mdd {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&--horizontal {
+		position: relative;
+		transition: color .4s, border-color .4s;
+
+		@screen md {
+			@apply border border-black;
+		}
+
+		&.expanded {
+			@screen md {
+				@apply text-primary border-primary;
+
+				.archive-filters__ul {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: all;
+				}
+				.filter-open {
+					transform: rotate(-180deg);
+					@apply fill-primary;
+				}
+			}
+		}
+
+		.archive-filters__ul {
+			@screen md {
+				position: absolute;
+				left: 0;
+				top: 100%;
+				visibility: hidden;
+				opacity: 0;
+				pointer-events: none;
+				min-width: 20rem;
+				z-index: 100;
+				transition: opacity .4s, .4s visibility;
+				@apply shadow-md border bg-white p-hgap;
+			}
+		}
+
+		.widgettitle.widget-title {
+			margin-bottom: 0;
+			cursor: pointer;
+		}
+
+	}
+
+	&__row {
+		display: none;
+		width: 100%;
+
+		@screen md {
+			@apply grid;
+		}
+
+		&.active {
+			@screen mdd {
+				position: fixed;
+				display: block;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				z-index: 999999999;
+				@apply bg-white;
+			}
+		}
+
+		.archive-filters__col:last-of-type {
+			@apply border border-black;
+
+			@screen md {
+				@apply border-none;
+			}
+		}
+	}
+
+	&__col {
+		width: 100%;
+
+		@screen md {
+			box-sizing: border-box;
+			width: auto;
+			max-width: 30rem;
+		}
+	}
+
+	&__ul {
+		position: fixed;
+		left: 100%;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: left .4s linear, opacity .4s, .4s visibility;
+		visibility: hidden;
+		@apply bg-white;
+
+		li li {
+			@apply m-0 ml-hgap;
+		}
+
+		@screen md {
+			opacity: 1;
+			position: relative;
+			background: transparent;
+			left: 0;
+			height: auto;
+			width: auto;
+			visibility: visible;
+		}
+	}
+
+	&__toggler {
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		@apply p-hgap mb-gap border border-black;
+
+		@screen md {
+			@apply hidden;
+		}
+
+	}
+
+	&__row-close {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		cursor: pointer;
+
+		@screen md {
+			@apply hidden;
+		}
+
+	}
+
+	&__link {
+
+		text-decoration: none;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		@screen mdd {
+			@apply p-hgap;
+		}
+
+		&.active {
+			@apply font-bold;
+
+			.archive-filters__bullet--empty {
+				display: none;
+			}
+			.archive-filters__bullet--filled {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+	}
+
+	&__bullet {
+		display: none
+	}
+
+	&__bullet--empty {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__bullet--filled {
+		display: none;
+	}
+
+	&__multifilter-button {
+		@apply base-button;
+
+		&.disabled {
+			@apply base-button--disabled;
+		}
+
+	}
+
+	&__back-button {
+		cursor: pointer;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		text-transform: uppercase;
+		@apply p-hgap text-md bg-black text-white font-bold;
+
+		@screen md {
+			@apply hidden;
+		}
+	}
+
+	&__removal-links {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+		@apply mb-gap;
+	}
+
+	&__removal-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		@apply border rounded-md py-[5px] px-hhgap text-sm mr-hgap;
+
+		svg {
+			@apply ml-hhgap;
+		}
+	}
+
+	&__ajax-loader {
+		z-index: 9999999999;
+		height: 100%;
+		width: 100vw;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity .2s, .2s visibility;
+		@apply absCenter bg-white/40;
+
+		&.loading {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
+		}
+	}
+}

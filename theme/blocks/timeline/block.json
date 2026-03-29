@@ -1,0 +1,28 @@
+{
+	"name": "acf/timeline",
+	"title": "Timeline",
+	"description": "A custom timeline block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"timeline"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

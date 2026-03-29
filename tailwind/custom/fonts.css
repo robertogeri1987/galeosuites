@@ -1,0 +1,23 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+/*
+ @layer base {
+  @font-face {
+    font-family: 'Futura';
+    src: url(./assets/fonts/Futura-Medium.otf) format('opentype');
+    font-weight: 400;
+		font-style: normal; font-variant: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Futura';
+    src: url(./assets/fonts/Futura-Bold.otf) format('opentype');
+    font-weight: 700;
+		font-style: normal; font-variant: normal;
+    font-display: swap;
+  }
+ } */

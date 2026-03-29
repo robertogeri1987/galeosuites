@@ -1,0 +1,32 @@
+{
+	"name": "acf/location",
+	"title": "Location",
+	"description": "A custom location block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"location"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

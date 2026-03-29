@@ -1,0 +1,28 @@
+{
+	"name": "acf/testo-tre-colonne",
+	"title": "Testo su tre colonne",
+	"description": "Un blocco con tre colonne di testo su desktop.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"testo-tre-colonne"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

@@ -1,0 +1,48 @@
+{
+    "key": "group_65426bb5ce89f",
+    "title": "Componente Testo",
+    "fields": [
+        {
+            "key": "field_65426bb6051e5",
+            "label": "Testo",
+            "name": "testo_blocco",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "relevanssi_exclude": 0,
+            "wpml_cf_preferences": 2,
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non metus gravida justo laoreet eleifend. Pellentesque in arcu convallis, molestie ligula at, gravida eros. Aenean rutrum est ante, a tristique enim placerat vitae. Vivamus in nulla ut lorem varius facilisis ac sed lorem.",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/dummy-template.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "localization",
+    "modified": 1701763788
+}

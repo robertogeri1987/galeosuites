@@ -1,0 +1,332 @@
+{
+    "key": "group_5f636af5b66fa",
+    "title": "Filtri Archivi",
+    "fields": [
+        {
+            "key": "field_5fa1100befb09",
+            "label": "Abilita Filtri",
+            "name": "abilita_flexible_archive_filters",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Sì",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 1
+        },
+        {
+            "key": "field_5f8aec043ad2f",
+            "label": "Caricamento Ajax",
+            "name": "caricamento_ajax_flexible_filters",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Sì",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f637fb5d48fe",
+            "label": "Utilizzo Filtri",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "I filtri si possono inserire tramite shortcode <strong>[customarchivefilters]<\/strong>. \r\n\r\nLo shortcode accetta vari parametri opzionali:\r\n\r\n<pre>\r\n<ul>\r\n<li><strong>filter_name<\/strong> : il nome del filtro, di default è il nome della tassonomia o del campo meta<\/li>\r\n<li><strong>current_parent<\/strong> : se <em>true<\/em> mostra soltanto i filtri figli della categoria corrente.<\/li>\r\n<li><strong>show_top_parent<\/strong> : se <em>true<\/em> risale fino al parente zero della categoria corrente, solo se anche currentParent è true<\/li>\r\n<li><strong>expand<\/strong> : se <em>true<\/em> espande tutti i figli di tutte le categorie<\/li>\r\n<li><strong>show_all_higher<\/strong> : se <em>true<\/em> mostra tutti i termini di livello superiore. <strong>Se usato con multifiltro può dare origine a 404<\/strong><\/li>\r\n<li><strong>skip_self<\/strong> : se <em>true<\/em> esclude il current queried_object_id dalla lista del filtro<\/li>\r\n<li><strong>excluded_terms<\/strong>:  accetta lista di slug o id di termini da escludere separati da <em>,<\/em><\/li>\r\n<li><strong>hide_parent<\/strong> : se <em>true<\/em> esclude il current queried_object_id parent dalla lista<\/li>\r\n<li><strong>forced_parent<\/strong> : mostra solo i figli di un parent scelto<\/li>\r\n<li><strong>multifilter<\/strong> : se <em>true<\/em> consente scelte multiple dei filtri con un bottone per filtrarle tutte insieme<\/li>\r\n<li><strong>direct<\/strong> : da usare solo insieme a <em>multifilter<\/em>, se <em>true<\/em> la scelta multipla avviene immediatamente al click e non tramite pulsante<\/li>\r\n<li><strong>layout<\/strong> : <em>vertical<\/em> (default, per i filtri nella sidebar) oppure <em>horizontal<\/em> (per i filtri sopra i risultati)<\/li>\r\n<li><strong>term_type<\/strong> : il nome della tassonomia (ad esempio <em>product_cat<\/em>) o del campo meta<\/li>\r\n<li><strong>get_term<\/strong> : il nome della query var nell'url (per le tassonomie wordpress lo mette in automatico (ad esempio <em>?product_cat=<\/em>)<\/li>\r\n<\/ul>\r\n<\/pre>\r\n\r\n<strong>IMPORTANTE:<\/strong>\r\nI filtri post meta non hanno query var definite in automatico, quindi <strong>DEVONO ESSERE DEFINITE NEI FILTRI PERSONALIZZATI SOTTOSTANTI, ED ESSERE UGUALI AL PARAMETRO get_term DELLO SHORTCODE.<\/strong>\r\n\r\n<strong>Inoltre, NON INSERIRE FILTRI PERSONALIZZATI CON LO STESSO INDEX<\/strong>\r\n\r\n<strong><em>Non modificare niente se non si è sicuri di quello che si fa, per non incorrere in problemi SEO.<\/em><\/strong>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5f637e047e791",
+            "label": "Filtri Personalizzati",
+            "name": "ap_wp_filtri_personalizzati",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Aggiungi Filtro",
+            "sub_fields": [
+                {
+                    "key": "field_5f637ec17e795",
+                    "label": "Type",
+                    "name": "ap_wp_filter_type",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "choices": {
+                        "Post Meta": "Post Meta",
+                        "Taxonomy": "Taxonomy"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0,
+                    "parent_repeater": "field_5f637e047e791"
+                },
+                {
+                    "key": "field_5f64b2959c235",
+                    "label": "Name",
+                    "name": "ap_wp_filter_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_5f637e047e791"
+                },
+                {
+                    "key": "field_5f6a723e0cb8c",
+                    "label": "System Name",
+                    "name": "ap_wp_filter_system_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_5f637e047e791"
+                },
+                {
+                    "key": "field_5f637e367e793",
+                    "label": "query_var",
+                    "name": "ap_wp_filter_query_var",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_5f637e047e791"
+                },
+                {
+                    "key": "field_5f637e5f7e794",
+                    "label": "Index",
+                    "name": "ap_wp_filter_index",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "default_value": 6,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 5,
+                    "max": "",
+                    "step": 1,
+                    "parent_repeater": "field_5f637e047e791"
+                }
+            ],
+            "rows_per_page": 20
+        },
+        {
+            "key": "field_5f6b00b914bc3",
+            "label": "Nomi Core Filters",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Nomi per i filtri delle tassonomie di base di WP (Categories, Product Categories ect.). Lascia vuoto per default.",
+            "new_lines": "wpautop",
+            "esc_html": 0,
+            "wpml_cf_preferences": 1
+        },
+        {
+            "key": "field_5f6b041c14bc4",
+            "label": "Categories",
+            "name": "ap_wp_core_filter_name_category",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f6b045614bc5",
+            "label": "Tags",
+            "name": "ap_wp_core_filter_name_tag",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f6b046214bc6",
+            "label": "Product Categories",
+            "name": "ap_wp_core_filter_name_product_cat",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f6b047b14bc7",
+            "label": "Product Tags",
+            "name": "ap_wp_core_filter_name_product_tag",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "filters-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1682922019,
+    "local_file": "\/home\/alessio\/Websites\/Local\/ap-wp-theme-tw\/app\/public\/wp-content\/themes\/ap-wp-theme-tw\/theme\/acf-json\/group_5f636af5b66fa.json",
+    "acfml_field_group_mode": "advanced"
+}

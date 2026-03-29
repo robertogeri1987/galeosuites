@@ -1,0 +1,65 @@
+.single-product {
+	.variations_form.cart {
+		.variations {
+			display: none;
+		}
+		.woocommerce-variation-price {
+			display: none;
+		}
+	}
+	.single_add_to_cart_button {
+		@apply w-full mt-hhgap uppercase;
+	}
+	.single_add_to_cart_button.disabled {
+		@apply hidden;
+	}
+	.summary .price {
+		@apply title-lg mt-gap;
+
+		.woocommerce-Price-currencySymbol {
+			@apply title-md;
+		}
+	}
+	.stock-manager-email {
+		@apply base-input;
+	}
+	.stock-manager-button {
+		@apply base-button;
+	}
+	.subscribe_for_interest_text {
+		@apply text-md;
+	}
+	&__ajax-loader {
+		@apply absCenter bg-white/70;
+		z-index: 1;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity .3s;
+		width: 100%;
+		height: 100%;
+
+		img.single-product__ajax-loader-image {
+				@apply absCenter w-[80px] h-[80px];
+		}
+
+		&.active {
+				opacity: 1;
+		}
+	}
+
+	/* .summary form {
+		@apply mdd:hidden;
+	} */
+	.summary .quantity {
+		@apply hidden;
+	}
+}
+
+.single_variation_wrap {
+	.stock.in-stock {
+		@apply hidden;
+	}
+	.stock.out-of-stock {
+		@apply text-alert py-hgap;
+	}
+}

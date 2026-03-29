@@ -1,0 +1,164 @@
+{
+    "key": "group_5e4d4bd0ea488",
+    "title": "Gallerie Variazioni Prodotto",
+    "fields": [
+        {
+            "key": "field_6021a59f0e51c",
+            "label": "Usa la Galleria principale come galleria per tutte le variazioni",
+            "name": "use_main_gallery_as_variations_gallery",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e4d4e9f8b4f3",
+            "label": "Galleria Variazione",
+            "name": "variation_gallery_acf_pro",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Imposta le immagini delle varianti solo se il prodotto è un prodotto variabile. Non utilizzarlo per prodotti semplici.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6021a59f0e51c",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "collapsed": "field_5e4d54db8b4f5",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Aggiungi Galleria",
+            "sub_fields": [
+                {
+                    "key": "field_5e4d54db8b4f5",
+                    "label": "ID Variazione (senza il simbolo #)",
+                    "name": "variation_id_acf_pro",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": "",
+                    "parent_repeater": "field_5e4d4e9f8b4f3"
+                },
+                {
+                    "key": "field_6021a67c78261",
+                    "label": "Utilizza la galleria principale per questa variazione",
+                    "name": "use_main_gallery_for_this_variation",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "wpml_cf_preferences": 1,
+                    "parent_repeater": "field_5e4d4e9f8b4f3"
+                },
+                {
+                    "key": "field_5e4d54be8b4f4",
+                    "label": "Variation Gallery",
+                    "name": "gallery",
+                    "aria-label": "",
+                    "type": "gallery",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6021a67c78261",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "insert": "append",
+                    "library": "all",
+                    "min": "",
+                    "max": "",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_5e4d4e9f8b4f3"
+                }
+            ],
+            "rows_per_page": 20
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 11,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1701273435,
+    "local_file": "\/home\/alessio\/Websites\/Local\/ap-wp-theme-tw\/app\/public\/wp-content\/themes\/ap-wp-theme-tw\/theme\/acf-json\/group_5e4d4bd0ea488.json",
+    "acfml_field_group_mode": "advanced"
+}

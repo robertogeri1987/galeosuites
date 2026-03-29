@@ -1,0 +1,7 @@
+.cross-sells {
+	@apply mt-gap;
+
+	.products.columns-4 {
+		@apply bg-light;
+	}
+}

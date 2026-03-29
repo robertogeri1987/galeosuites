@@ -1,0 +1,7 @@
+.upsells {
+	@apply w-full text-black mt-svgap md:mt-vgap pb-hgap relative;
+
+	>h2 {
+		@apply title-lg mb-gap;
+	}
+}

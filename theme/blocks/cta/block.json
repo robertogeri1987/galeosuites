@@ -1,0 +1,32 @@
+{
+	"name": "acf/cta",
+	"title": "CTA",
+	"description": "A custom cta block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"cta"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"name": "acf/person-slider",
+	"title": "Person Slider",
+	"description": "A custom person-slider block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"person-slider"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

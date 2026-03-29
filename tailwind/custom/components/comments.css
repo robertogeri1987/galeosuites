@@ -1,0 +1,133 @@
+.comment {
+	@apply mt-hhgap;
+
+	ol {
+		@apply pl-hgap;
+
+		ol {
+			@apply pl-hgap;
+			ol {
+				@apply pl-hgap;
+				ol {
+					@apply pl-hgap;
+					ol {
+						@apply pl-hgap;
+					}
+				}
+			}
+		}
+	}
+}
+
+.pingback {
+	@apply pb-[10px] text-xs;
+	a {
+		@apply underline hover:!text-primary;
+	}
+}
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	@apply bg-white text-sm mt-hgap;
+}
+
+.comment-respond {
+	.form-submit {
+		@apply mb-0;
+		input {
+			@apply base-button base-button--primary mb-hgap;
+		}
+	}
+}
+
+.comment-reply-title {
+	small {
+		@apply ml-hhgap font-normal text-base underline;
+	}
+}
+
+.comment-list {
+    li {
+			@apply pt-hgap pb-[5vw];
+    }
+    .depth-1 {
+			@apply pl-0;
+    }
+    .comment-respond {
+			@apply pb-hhgap;
+    }
+    >.comment-respond {
+			@apply p-0;
+    }
+}
+
+.comment-header {
+	@apply mb-[5vw] sm:mb-hgap;
+	p {
+		@apply mb-0;
+	}
+}
+
+.comment-author {
+	@apply flex items-center;
+
+	img {
+		@apply mr-hhgap w-[32px];
+	}
+	.says {
+		@apply ml-[5px]
+	}
+}
+
+.comment-edit-link {
+	@apply pl-hgap;
+    .entry-pings & {
+			@apply block clear-both p-0;
+    }
+}
+
+.comment-reply-link {
+	@apply block mb-hgap base-button base-button--primary;
+}
+
+.comment-meta {
+	@apply break-words;
+	.entry-pings & {
+		@apply mb-hgap;
+	}
+}
+
+.comment-metadata {
+	@apply text-xs mt-[5px];
+}
+
+.comment-content {
+	@apply prose clear-both;
+    clear: both;
+    ul>li {
+		@apply list-disc;
+    }
+    p {
+		@apply mb-hhgap;
+    }
+}
+
+.comment-respond {
+    input[type="email"],
+    input[type="text"],
+    input[type="url"] {
+		@apply base-input xl:w-1/2;
+        label {
+			@apply block ml-hhgap;
+        }
+    }
+}
+
+.entry-pings .reply {
+	@apply hidden;
+}
+
+.pingback:last-of-type p {
+	@apply mb-0;
+}

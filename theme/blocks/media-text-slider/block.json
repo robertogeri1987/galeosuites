@@ -1,0 +1,28 @@
+{
+	"name": "acf/media-text-slider",
+	"title": "Slider Media Testo",
+	"description": "A custom media-text-slider block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"media-text-slider"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

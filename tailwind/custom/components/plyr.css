@@ -1,0 +1,10 @@
+.plyr__control--overlaid {
+	background: url('assets/images/play.png') !important;
+	@apply !bg-contain !w-[185px] !h-[185px];
+
+	svg {
+		@apply !hidden;
+	}
+}
+
+.plyr.plyr--stopped .plyr__controls { display: none }

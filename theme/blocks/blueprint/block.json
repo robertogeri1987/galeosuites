@@ -1,0 +1,32 @@
+{
+	"name": "acf/banner",
+	"title": "Banner",
+	"description": "A custom banner block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"banner"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

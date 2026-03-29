@@ -1,0 +1,32 @@
+{
+	"name": "acf/contact-form",
+	"title": "Modulo di Contatto",
+	"description": "A custom contact-form block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"contact-form"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

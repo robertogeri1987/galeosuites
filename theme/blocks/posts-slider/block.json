@@ -1,0 +1,28 @@
+{
+	"name": "acf/posts-slider",
+	"title": "Slider Post",
+	"description": "A custom posts-slider block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"posts-slider"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

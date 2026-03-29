@@ -1,0 +1,17 @@
+.privacy-acceptance {
+	&__required {
+		@apply text-alert;
+	}
+
+	&__content {
+		@apply p-hhgap bg-black/10 leading-normal w-full block rem:h-[80px] text-sm mb-hgap overflow-y-auto;
+	}
+
+	&__link {
+		@apply underline;
+	}
+
+	&__label {
+			@apply flex items-center;
+	}
+}

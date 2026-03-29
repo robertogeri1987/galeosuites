@@ -1,0 +1,105 @@
+{
+    "key": "group_5e6cb7b7ba7f6",
+    "title": "Layout Pagina",
+    "fields": [
+        {
+            "key": "field_5e6cb7b80c839",
+            "label": "Modifica Layout Pagina",
+            "name": "modifica_layout_pagina",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Sì",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e6cb7ed23e7f",
+            "label": "Layout Pagina",
+            "name": "layout_pagina_custom",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e6cb7b80c839",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "centered-content": "Centered Content",
+                "full-width-content": "Full Width Content",
+                "sidebar-content": "Sidebar Content",
+                "content-sidebar": "Content Sidebar"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "Centered Content",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1726234719,
+    "local_file": "\/Users\/robertogeri\/Local Sites\/graminia\/app\/public\/wp-content\/themes\/ap-wp-theme-tw\/theme\/acf-json\/group_5e6cb7b7ba7f6.json",
+    "acfml_field_group_mode": "advanced"
+}

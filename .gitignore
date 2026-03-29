@@ -1,0 +1,9 @@
+/node_modules
+/vendor
+.DS_Store
+script.min.js
+wc-admin-scripts.min.js
+style.css
+style-editor.css
+wc-editor.css
+ap-wp-theme-tw.zip

@@ -1,0 +1,30 @@
+.woocommerce .blockUI.blockOverlay {
+	position: absolute;
+}
+.woocommerce-checkout .blockUI.blockOverlay {
+	position: fixed !important;
+}
+.woocommerce .blockUI.blockOverlay:before, .woocommerce .loader:before {
+	/* background: url("../../images/ajax-loader.svg") repeat scroll center center / cover rgba(0, 0, 0, 0); */
+	content: "";
+	display: block;
+	font-size: 2rem;
+	height: 7rem;
+	left: 50%;
+	line-height: 1;
+	margin-left: -3.5rem;
+	margin-top: -3.5em;
+	position: fixed;
+	text-align: center;
+	top: 50%;
+	width: 7rem;
+	z-index: 99;
+}
+
+// Hide Braintree Payment Loader
+.woocommerce .bfwc-payment-loader .blockUI.blockOverlay:before, .woocommerce .bfwc-payment-loader .loader:before {
+	display: none !important;
+}
+.bfwc-payment-loader, body.bfwc-body .bfwc-new-payment-method-container .bfwc-payment-loader {
+	display: none !important;
+}

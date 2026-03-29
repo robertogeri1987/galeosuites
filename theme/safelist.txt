@@ -1,0 +1,47 @@
+md:grid-cols-1
+md:grid-cols-2
+md:grid-cols-3
+md:grid-cols-4
+md:grid-cols-5
+md:grid-cols-6
+md:grid-cols-7
+md:grid-cols-8
+md:grid-cols-9
+md:grid-cols-10
+md:grid-cols-11
+md:grid-cols-12
+
+desk:grid-cols-1
+desk:grid-cols-2
+desk:grid-cols-3
+desk:grid-cols-4
+desk:grid-cols-5
+desk:grid-cols-6
+desk:grid-cols-7
+desk:grid-cols-8
+desk:grid-cols-9
+desk:grid-cols-10
+desk:grid-cols-11
+desk:grid-cols-12
+
+desk:mr-auto
+mobile:hidden
+mobile:mb-gap
+desk:col-start-3
+
+text-[9px]
+
+gap-gap
+grid-cols-1
+grid
+
+
+<p>
+	<input type="email" name="EMAIL" placeholder="Email" required class="input-mailchimp base-input base-input--white w-[639px] max-w-full"/>
+</p>
+<label>
+	<input type="checkbox" name="AGREE_TO_TERMS" value="1" required=""><span class="wpcf7-list-item-label wpcf7-list-item-label--invert text-[12px]">Avendo letto <a class="underline" href="/privacy-policy" target="_blank"> l’informativa sulla privacy</a>, acconsento all’invio via e-mail di informazioni e comunicazioni promozionali, comprese le newsletter, relative a prodotti e/o servizio di mio specifico interesse.</span>
+</label>
+<p class="mt-gap">
+	<input type="submit" value="Iscriviti" class="base-button base-button--outline invert max-w-[180px]"/>
+</p>

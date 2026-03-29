@@ -1,0 +1,28 @@
+{
+	"name": "acf/lista-icone",
+	"title": "Lista Icone",
+	"description": "A custom lista-icone block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"lista-icone"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

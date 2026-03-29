@@ -1,0 +1,28 @@
+{
+	"name": "acf/posts-selection",
+	"title": "Racconti Selezionati",
+	"description": "A custom posts-selection block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"posts-selection"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

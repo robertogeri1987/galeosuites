@@ -1,0 +1,5 @@
+[data-predictive-search-results] {
+		&.active {
+			@apply opacity-100 visible pointer-events-auto;
+		}
+}

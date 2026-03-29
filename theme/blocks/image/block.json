@@ -1,0 +1,28 @@
+{
+	"name": "acf/image",
+	"title": "Immagine",
+	"description": "A custom image block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"image"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

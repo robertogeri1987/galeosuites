@@ -1,0 +1,53 @@
+.datepicker {
+ 	.qs-datepicker-container {
+	 	@apply relative w-full rounded-none shadow-none border-none bg-transparent;
+ 	}
+	.qs-arrow::after {
+		display: none;
+	}
+	.qs-arrow {
+
+		&.qs-left {
+			background: url('assets/images/arrow-left.png');
+			@apply bg-contain bg-center !w-[25px] !h-[25px] order-2 ml-auto bg-no-repeat;
+		}
+		&.qs-right {
+			background: url('assets/images/arrow-right.png');
+			@apply bg-contain bg-center !w-[25px] !h-[25px] order-3 ml-gap bg-no-repeat;
+		}
+	}
+
+	.qs-controls {
+		@apply bg-transparent border-b border-black py-[3px];
+	}
+
+	.qs-month-year {
+		@apply title-xs text-left font-normal order-1;
+	}
+
+	.qs-squares {
+		@apply px-0 text-xs;
+	}
+	.qs-square {
+		@apply py-hhgap h-auto rounded-none;
+		/* &:hover {
+			cursor: url('assets/images/drag.svg'), auto;
+		} */
+	}
+
+	.qs-day {
+		@apply font-semibold lowercase text-black;
+	}
+
+	.qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+		@apply bg-primary rounded-none;
+	}
+
+	.qs-active {
+		@apply bg-primary/50
+	}
+	.qs-current{
+		@apply !no-underline;
+	}
+
+}

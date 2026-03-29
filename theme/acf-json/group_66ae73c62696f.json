@@ -1,0 +1,86 @@
+{
+    "key": "group_66ae73c62696f",
+    "title": "Blocco Testo Centrato",
+    "fields": [
+        {
+            "key": "field_66ae73c623eb2",
+            "label": "Testo Centrato",
+            "name": "testo_centrato",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_65426bb5ce89f"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_65426bb6051e5",
+                    "label": "Testo",
+                    "name": "testo_centrato_testo_blocco",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "wysiwyg",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_65426bb5ce89f",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non metus gravida justo laoreet eleifend. Pellentesque in arcu convallis, molestie ligula at, gravida eros. Aenean rutrum est ante, a tristique enim placerat vitae. Vivamus in nulla ut lorem varius facilisis ac sed lorem.",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "_name": "testo_blocco",
+                    "_valid": 1,
+                    "_clone": "field_66ae73c623eb2",
+                    "__key": "field_65426bb6051e5",
+                    "__name": "testo_blocco",
+                    "__label": "Testo"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/testo-centrato"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1726234719,
+    "local_file": "\/Users\/robertogeri\/Local Sites\/graminia\/app\/public\/wp-content\/themes\/ap-wp-theme-tw\/theme\/acf-json\/group_66ae73c62696f.json",
+    "acfml_field_group_mode": "advanced"
+}

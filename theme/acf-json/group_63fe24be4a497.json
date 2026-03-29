@@ -1,0 +1,49 @@
+{
+    "key": "group_63fe24be4a497",
+    "title": "Modulo di contatto generico",
+    "fields": [
+        {
+            "key": "field_63fe24bf255f2",
+            "label": "Shortcode modulo di contatto generico",
+            "name": "shortcode_modulo_di_contatto_generico",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "relevanssi_exclude": 0,
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "impostazioni-sezioni-tema"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1682922019,
+    "local_file": "\/home\/alessio\/Websites\/Local\/ap-wp-theme-tw\/app\/public\/wp-content\/themes\/ap-wp-theme-tw\/theme\/acf-json\/group_63fe24be4a497.json",
+    "acfml_field_group_mode": "advanced"
+}

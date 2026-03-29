@@ -1,0 +1,28 @@
+{
+	"name": "acf/products-selection",
+	"title": "Prodotti Selezionati",
+	"description": "A custom products-selection block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"products-selection"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

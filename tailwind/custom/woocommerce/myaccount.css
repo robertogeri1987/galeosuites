@@ -1,0 +1,71 @@
+.woocommerce-account {
+	h1.title-md {
+		margin-bottom: 0 !important;
+	}
+	.inner-container {
+		margin-bottom: 0 !important;
+	}
+	.woocommerce {
+		@apply mt-vgap pt-2gap grid grid-cols-1 gap-2gap md:grid-cols-12 auto-rows-min auto-cols-min;
+
+		> p {
+			@apply md:col-span-12;
+		}
+	}
+	.woocommerce-notices-wrapper {
+		@apply md:col-span-12;
+	}
+	.woocommerce-message {
+		@apply md:col-span-12;
+	}
+
+	h2 {
+		@apply uppercase;
+	}
+
+	.u-columns.col2-set {
+		@apply grid grid-cols-1 gap-2gap md:grid-cols-2 md:col-span-12;
+	}
+
+	.woocommerce-button {
+		@apply w-full;
+	}
+}
+
+
+.woocommerce-MyAccount-navigation {
+	@apply md:col-span-3;
+
+	ul {
+		@apply grid grid-cols-1 gap-hhgap;
+	}
+
+	li {
+		@apply hover:text-primary transition-all duration-300 ease-in-out;
+
+		&.is-active {
+			@apply text-primary;
+		}
+	}
+}
+.woocommerce-MyAccount-content {
+	@apply md:col-span-9 mb-gap;
+
+	a:not(".button") {
+		@apply underline hover:text-primary transition-all duration-300 ease-in-out;
+	}
+}
+
+.woocommerce-ResetPassword {
+	@apply md:col-span-6 md:col-start-4;
+}
+
+.woocommerce-Address {
+	@apply mt-gap;
+}
+
+.woocommerce-privacy-policy-text {
+	a {
+		@apply underline hover:text-primary transition-all duration-300 ease-in-out;
+	}
+}

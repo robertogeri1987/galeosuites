@@ -1,0 +1,6 @@
+.person-slider {
+	&:hover {
+		cursor: url('assets/images/drag.svg'), auto;
+	}
+
+}

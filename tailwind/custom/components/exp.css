@@ -1,0 +1,7 @@
+.exp {
+	&.open {
+		.exp-arrow {
+			@apply rotate-0;
+		}
+	}
+}

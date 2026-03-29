@@ -1,0 +1,9 @@
+<?php
+/**
+ * SliderFull Block Template.
+ *
+ * @param   array $block The block settings and attributes.
+ */
+
+$bl = new \Classes\Blocks\SliderFull( true, $block );
+$bl->render();

@@ -1,0 +1,28 @@
+{
+	"name": "acf/mappa-arno",
+	"title": "Mappa Arno",
+	"description": "A custom mappa-arno block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"mappa-arno"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

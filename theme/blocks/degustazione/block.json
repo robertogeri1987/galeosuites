@@ -1,0 +1,32 @@
+{
+	"name": "acf/degustazione",
+	"title": "Degustazione",
+	"description": "A custom degustazione block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"degustazione"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

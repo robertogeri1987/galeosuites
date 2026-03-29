@@ -1,0 +1,156 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+/** Custom vars and Alpine JS breakpoint plugin defs */
+:root {
+	--smaller-content: 81.25em;
+	--layout-content: 81.25em;
+	--breakpoint: "unset";
+	--scrollbarWidth: 0;
+	--swiper-theme-color: #b2a553 !important;
+	--plyr-color-main: #b2a553 !important;
+}
+@screen xxs {
+	:root {
+		--breakpoint: "xxs";
+	}
+}
+@screen xs {
+	:root {
+		--breakpoint: "xs";
+	}
+}
+@screen sm {
+	:root {
+		--breakpoint: "sm";
+	}
+}
+@screen md {
+	:root {
+		--breakpoint: "md";
+	}
+}
+@screen lg {
+	:root {
+		--breakpoint: "lg";
+	}
+}
+@screen xl {
+	:root {
+		--breakpoint: "xl";
+	}
+}
+@screen 2xl {
+	:root {
+		--breakpoint: "2xl";
+	}
+}
+
+/**
+	* This uses the background and foreground colors declared in the
+	* `theme.json` file and is applied both to the frontend and in the block
+	* editor.
+	*/
+
+html {
+	@apply text-base;
+	font-variation-settings:
+		"wdth" 100,
+		"wght" 300;
+	font-optical-sizing: auto;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+	letter-spacing: .6px;
+}
+
+body:not(.wp-admin),
+.editor-styles-wrapper {
+	@apply max-w-full bg-background font-sans text-foreground overflow-x-clip overflow-y-visible;
+}
+
+svg {
+	user-select: none;
+}
+
+blockquote {
+	@apply p-hhgap my-hhgap relative font-light italic;
+}
+
+blockquote:before {
+	@apply absolute block text-6xl top-0;
+	content: open-quote;
+	margin-left: -0.6em;
+	margin-top: -0.4em;
+}
+
+p {
+	@apply mt-hhgap;
+}
+
+hr {
+	@apply border-b border-light py-hhgap;
+}
+
+b,
+strong {
+	@apply font-bold;
+}
+
+cite,
+em,
+i {
+	@apply italic;
+}
+
+/* ## Headings
+	--------------------------------------------- */
+
+h1 {
+	@apply title-lg;
+}
+
+h2 {
+	@apply title-lg;
+}
+
+h3 {
+	@apply title-md;
+}
+
+h4 {
+	@apply title-sm;
+}
+
+h5 {
+	@apply title-xs;
+}
+
+h6 {
+	@apply title-xs;
+}
+
+table {
+	@apply w-full site-border border-collapse border-spacing-0 leading-[1] my-hhgap;
+}
+
+tbody {
+	@apply flex-1 sm:flex-none;
+}
+
+tr {
+	@apply flex flex-col flex-nowrap sm:table-row mb-2 sm:mb-0;
+}
+
+td {
+	@apply site-border p-3;
+}
+
+td,
+th {
+	@apply text-left rem:p-[10px];
+}

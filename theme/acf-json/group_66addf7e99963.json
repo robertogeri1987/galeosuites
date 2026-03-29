@@ -1,0 +1,1076 @@
+{
+    "key": "group_66addf7e99963",
+    "title": "Blocco Titolo Testo Immagine",
+    "fields": [
+        {
+            "key": "field_66addf7ea436e",
+            "label": "Titolo",
+            "name": "titolo",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_612fa05f558ef"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_612fa066d9dc4",
+                    "label": "Titolo Blocco",
+                    "name": "titolo_titolo_blocco",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_612fa05f558ef",
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "_name": "titolo_blocco",
+                    "_valid": 1,
+                    "_clone": "field_66addf7ea436e",
+                    "__key": "field_612fa066d9dc4",
+                    "__name": "titolo_blocco",
+                    "__label": "Titolo Blocco"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_612fa073d9dc5",
+                    "label": "Tag Titolo Blocco",
+                    "name": "titolo_tag_titolo_blocco",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_612fa05f558ef",
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "h1": "h1",
+                        "h2": "h2",
+                        "h3": "h3",
+                        "h4": "h4",
+                        "h5": "h5",
+                        "h6": "h6",
+                        "p": "p",
+                        "span": "span",
+                        "div": "div"
+                    },
+                    "default_value": "h2",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "horizontal",
+                    "save_other_choice": 0,
+                    "_name": "tag_titolo_blocco",
+                    "_valid": 1,
+                    "_clone": "field_66addf7ea436e",
+                    "__key": "field_612fa073d9dc5",
+                    "__name": "tag_titolo_blocco",
+                    "__label": "Tag Titolo Blocco"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_6426e69066db3",
+                    "label": "Modifica Dimensione TItolo",
+                    "name": "titolo_modifica_dimensione_titolo",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "true_false",
+                    "value": null,
+                    "menu_order": 2,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_612fa05f558ef",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1,
+                    "_name": "modifica_dimensione_titolo",
+                    "_valid": 1,
+                    "_clone": "field_66addf7ea436e",
+                    "__key": "field_6426e69066db3",
+                    "__name": "modifica_dimensione_titolo",
+                    "__label": "Modifica Dimensione TItolo"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_6426e6b166db4",
+                    "label": "Dimensione Titolo",
+                    "name": "titolo_dimensione_titolo",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 3,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6426e69066db3",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_612fa05f558ef",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "xs": "XS",
+                        "sm": "Piccolo",
+                        "md": "Medio",
+                        "lg": "Grande",
+                        "xl": "XL"
+                    },
+                    "default_value": "md",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "horizontal",
+                    "save_other_choice": 0,
+                    "_name": "dimensione_titolo",
+                    "_valid": 1,
+                    "_clone": "field_66addf7ea436e",
+                    "__key": "field_6426e6b166db4",
+                    "__name": "dimensione_titolo",
+                    "__label": "Dimensione Titolo"
+                }
+            ]
+        },
+        {
+            "key": "field_66addfa4a436f",
+            "label": "Sottotitolo",
+            "name": "sottotitolo",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_612fa05f558ef"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_612fa066d9dc4",
+                    "label": "Titolo Blocco",
+                    "name": "sottotitolo_titolo_blocco",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_612fa05f558ef",
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "_name": "titolo_blocco",
+                    "_valid": 1,
+                    "_clone": "field_66addfa4a436f",
+                    "__key": "field_612fa066d9dc4",
+                    "__name": "titolo_blocco",
+                    "__label": "Titolo Blocco"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_612fa073d9dc5",
+                    "label": "Tag Titolo Blocco",
+                    "name": "sottotitolo_tag_titolo_blocco",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_612fa05f558ef",
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "h1": "h1",
+                        "h2": "h2",
+                        "h3": "h3",
+                        "h4": "h4",
+                        "h5": "h5",
+                        "h6": "h6",
+                        "p": "p",
+                        "span": "span",
+                        "div": "div"
+                    },
+                    "default_value": "h2",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "horizontal",
+                    "save_other_choice": 0,
+                    "_name": "tag_titolo_blocco",
+                    "_valid": 1,
+                    "_clone": "field_66addfa4a436f",
+                    "__key": "field_612fa073d9dc5",
+                    "__name": "tag_titolo_blocco",
+                    "__label": "Tag Titolo Blocco"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_6426e69066db3",
+                    "label": "Modifica Dimensione TItolo",
+                    "name": "sottotitolo_modifica_dimensione_titolo",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "true_false",
+                    "value": null,
+                    "menu_order": 2,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_612fa05f558ef",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1,
+                    "_name": "modifica_dimensione_titolo",
+                    "_valid": 1,
+                    "_clone": "field_66addfa4a436f",
+                    "__key": "field_6426e69066db3",
+                    "__name": "modifica_dimensione_titolo",
+                    "__label": "Modifica Dimensione TItolo"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_6426e6b166db4",
+                    "label": "Dimensione Titolo",
+                    "name": "sottotitolo_dimensione_titolo",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 3,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6426e69066db3",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_612fa05f558ef",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "xs": "XS",
+                        "sm": "Piccolo",
+                        "md": "Medio",
+                        "lg": "Grande",
+                        "xl": "XL"
+                    },
+                    "default_value": "md",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "horizontal",
+                    "save_other_choice": 0,
+                    "_name": "dimensione_titolo",
+                    "_valid": 1,
+                    "_clone": "field_66addfa4a436f",
+                    "__key": "field_6426e6b166db4",
+                    "__name": "dimensione_titolo",
+                    "__label": "Dimensione Titolo"
+                }
+            ]
+        },
+        {
+            "key": "field_66addfafa4370",
+            "label": "Testo",
+            "name": "testo",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_65426bb5ce89f"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_65426bb6051e5",
+                    "label": "Testo",
+                    "name": "testo_testo_blocco",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "wysiwyg",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_65426bb5ce89f",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non metus gravida justo laoreet eleifend. Pellentesque in arcu convallis, molestie ligula at, gravida eros. Aenean rutrum est ante, a tristique enim placerat vitae. Vivamus in nulla ut lorem varius facilisis ac sed lorem.",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "_name": "testo_blocco",
+                    "_valid": 1,
+                    "_clone": "field_66addfafa4370",
+                    "__key": "field_65426bb6051e5",
+                    "__name": "testo_blocco",
+                    "__label": "Testo"
+                }
+            ]
+        },
+        {
+            "key": "field_66ade28d50b6e",
+            "label": "Cta",
+            "name": "cta",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_63f652e8bc666"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_63f652e9e4e03",
+                    "label": "Tipo di link",
+                    "name": "cta_link_type",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "nessuno": "Nessun Link",
+                        "interno": "Interno (per pagine e post)",
+                        "libero": "Libero (per linkare altri siti)",
+                        "tassonomia": "Tassonomia (per categorie o tag)",
+                        "download": "Download"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "vertical",
+                    "save_other_choice": 0,
+                    "_name": "link_type",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_63f652e9e4e03",
+                    "__name": "link_type",
+                    "__label": "Tipo di link"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_63f6536ce4e04",
+                    "label": "Link",
+                    "name": "cta_link_interno",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "page_link",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "interno"
+                            }
+                        ]
+                    ],
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "post_type": [
+                        "page",
+                        "post",
+                        "recensioni",
+                        "distributori",
+                        "sistema",
+                        "prodotti-goldnote"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "allow_archives": 1,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "_name": "link_interno",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_63f6536ce4e04",
+                    "__name": "link_interno",
+                    "__label": "Link"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_63f6542de4e05",
+                    "label": "Link",
+                    "name": "cta_link_esterno",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "link",
+                    "value": null,
+                    "menu_order": 2,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "libero"
+                            }
+                        ]
+                    ],
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "75",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "return_format": "array",
+                    "_name": "link_esterno",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_63f6542de4e05",
+                    "__name": "link_esterno",
+                    "__label": "Link"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_6442a0ba948d2",
+                    "label": "File da Scaricare",
+                    "name": "cta_file_da_scaricare",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "file",
+                    "value": null,
+                    "menu_order": 3,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "download"
+                            }
+                        ]
+                    ],
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "_name": "file_da_scaricare",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_6442a0ba948d2",
+                    "__name": "file_da_scaricare",
+                    "__label": "File da Scaricare"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_63f65fcebe7f4",
+                    "label": "Tipo di Tassonomia",
+                    "name": "cta_tipo_di_tassonomia",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 4,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "tassonomia"
+                            }
+                        ]
+                    ],
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "category": "Categoria",
+                        "post_tag": "Tag",
+                        "product_cat": "Categoria Prodotto"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "vertical",
+                    "save_other_choice": 0,
+                    "_name": "tipo_di_tassonomia",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_63f65fcebe7f4",
+                    "__name": "tipo_di_tassonomia",
+                    "__label": "Tipo di Tassonomia"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_63f65aaf4dba4",
+                    "label": "Link",
+                    "name": "cta_link_tassonomia_cat",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "taxonomy",
+                    "value": null,
+                    "menu_order": 5,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f65fcebe7f4",
+                                "operator": "==",
+                                "value": "category"
+                            },
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "tassonomia"
+                            }
+                        ]
+                    ],
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "taxonomy": "category",
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "bidirectional_target": [],
+                    "_name": "link_tassonomia_cat",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_63f65aaf4dba4",
+                    "__name": "link_tassonomia_cat",
+                    "__label": "Link"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_63f66062be7f5",
+                    "label": "Link",
+                    "name": "cta_link_tassonomia_tag",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "taxonomy",
+                    "value": null,
+                    "menu_order": 6,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f65fcebe7f4",
+                                "operator": "==",
+                                "value": "post_tag"
+                            },
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "tassonomia"
+                            }
+                        ]
+                    ],
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "taxonomy": "post_tag",
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "bidirectional_target": [],
+                    "_name": "link_tassonomia_tag",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_63f66062be7f5",
+                    "__name": "link_tassonomia_tag",
+                    "__label": "Link"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_63f660a6e31c6",
+                    "label": "Link",
+                    "name": "cta_link_tassonomia_product_cat",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "taxonomy",
+                    "value": null,
+                    "menu_order": 7,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f65fcebe7f4",
+                                "operator": "==",
+                                "value": "product_cat"
+                            },
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "tassonomia"
+                            }
+                        ]
+                    ],
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "taxonomy": "category",
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "bidirectional_target": [],
+                    "_name": "link_tassonomia_product_cat",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_63f660a6e31c6",
+                    "__name": "link_tassonomia_product_cat",
+                    "__label": "Link"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_63fa2e5981e75",
+                    "label": "Testo Link",
+                    "name": "cta_testo_link",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 8,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "interno"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "tassonomia"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_63f652e9e4e03",
+                                "operator": "==",
+                                "value": "download"
+                            }
+                        ]
+                    ],
+                    "parent": "group_63f652e8bc666",
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "_name": "testo_link",
+                    "_valid": 1,
+                    "_clone": "field_66ade28d50b6e",
+                    "__key": "field_63fa2e5981e75",
+                    "__name": "testo_link",
+                    "__label": "Testo Link"
+                }
+            ]
+        },
+        {
+            "key": "field_66addfc8a4371",
+            "label": "Immagine",
+            "name": "immagine",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_64f89d1c0d508"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_64f89d8567554",
+                    "label": "Immagine Desktop",
+                    "name": "immagine_immagine",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "image",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_64f89d1c0d508",
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "_name": "immagine",
+                    "_valid": 1,
+                    "_clone": "field_66addfc8a4371",
+                    "__key": "field_64f89d8567554",
+                    "__name": "immagine",
+                    "__label": "Immagine Desktop"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_64f89db567555",
+                    "label": "Immagine Mobile (facoltativo)",
+                    "name": "immagine_immagine_mobile",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "image",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_64f89d1c0d508",
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "_name": "immagine_mobile",
+                    "_valid": 1,
+                    "_clone": "field_66addfc8a4371",
+                    "__key": "field_64f89db567555",
+                    "__name": "immagine_mobile",
+                    "__label": "Immagine Mobile (facoltativo)"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_64f89dde67556",
+                    "label": "Immagine Tablet (facoltativo)",
+                    "name": "immagine_immagine_tablet",
+                    "aria-label": "",
+                    "prefix": "acf",
+                    "type": "image",
+                    "value": null,
+                    "menu_order": 2,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_64f89d1c0d508",
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "wpml_cf_preferences": 3,
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "_name": "immagine_tablet",
+                    "_valid": 1,
+                    "_clone": "field_66addfc8a4371",
+                    "__key": "field_64f89dde67556",
+                    "__name": "immagine_tablet",
+                    "__label": "Immagine Tablet (facoltativo)"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/titolo-testo-immagine"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1726234719,
+    "local_file": "\/Users\/robertogeri\/Local Sites\/graminia\/app\/public\/wp-content\/themes\/ap-wp-theme-tw\/theme\/acf-json\/group_66addf7e99963.json",
+    "acfml_field_group_mode": "advanced"
+}

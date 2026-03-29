@@ -1,0 +1,48 @@
+// Gutenberg blocks style
+.wp-block-columns {
+	@apply gap-gap;
+}
+
+.wp-block-code {
+}
+
+.wp-block-image {
+
+	img {
+		@apply my-0;
+	}
+
+	&.alignleft {
+		@apply mr-gap;
+	}
+	&.alignright {
+		@apply ml-gap;
+	}
+}
+.wp-caption {
+	&.alignleft {
+		@apply mr-gap;
+	}
+	&.alignright {
+		@apply ml-gap;
+	}
+}
+.wp-block-button .wp-block-button__link {
+	@apply base-button no-underline;
+}
+
+.gallery {
+	@apply grid gap-gap my-gap;
+}
+.gallery-columns-2 {
+	@apply grid-cols-2;
+}
+.gallery-columns-3 {
+	@apply grid-cols-3;
+}
+.gallery-columns-4 {
+	@apply grid-cols-4;
+}
+.gallery .gallery-item, .gallery img {
+	@apply my-0 rounded-xl overflow-hidden w-full;
+}

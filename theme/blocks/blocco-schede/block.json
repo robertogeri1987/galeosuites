@@ -1,0 +1,28 @@
+{
+	"name": "acf/blocco-schede",
+	"title": "Blocco Schede",
+	"description": "A custom blocco-schede block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"blocco-schede"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "acf/colonna-immagini",
+	"title": "Colonna immagini",
+	"description": "A custom colonna-immagini block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"colonna-immagini"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

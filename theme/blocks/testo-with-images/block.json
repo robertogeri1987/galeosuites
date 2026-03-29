@@ -1,0 +1,32 @@
+{
+	"name": "acf/testo-with-images",
+	"title": "Testo with images",
+	"description": "A custom testo-with-images block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"testo-with-images"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

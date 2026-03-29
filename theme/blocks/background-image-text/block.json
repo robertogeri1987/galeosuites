@@ -1,0 +1,27 @@
+{
+	"name": "acf/background-image-text",
+	"title": "Testo con immagine di sfondo",
+	"description": "A custom background-image-text block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"background-image-text"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

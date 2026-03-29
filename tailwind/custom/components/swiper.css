@@ -1,0 +1,45 @@
+/* :root {
+  --swiper-navigation-size: 150px;
+} */
+
+.swiper-button-disabled {
+	pointer-events: all;
+}
+.swiper-button-disabled svg {
+	@apply opacity-[0.4] pointer-events-none;
+}
+.acf-slider {
+	@apply invisible;
+}
+.acf-slider__arrow {
+	@apply invisible;
+}
+.swiper-initialized .acf-slider {
+	@apply visible;
+}
+.swiper-initialized .acf-slider {
+	@apply visible;
+}
+.swiper-initialized .acf-slider__arrow {
+	@apply visible;
+}
+.swiper-initialized + .acf-slider__arrow {
+	@apply visible;
+}
+.swiper-initialized + .acf-slider__arrow + .acf-slider__arrow {
+	@apply visible;
+}
+
+.swiper-slide,
+.swiper-slide p {
+	color: #8b8b8b;
+}
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-active p {
+	@apply text-black;
+}
+
+.acf-slider__container--carousel-outer-labels .swiper-slide.swiper-slide-active,
+.acf-slider__container--carousel-outer-labels .swiper-slide.swiper-slide-active p {
+	@apply text-white;
+}

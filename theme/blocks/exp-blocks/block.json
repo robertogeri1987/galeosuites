@@ -1,0 +1,28 @@
+{
+	"name": "acf/exp-blocks",
+	"title": "Blocchi Espandibili",
+	"description": "A custom exp-blocks block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"exp-blocks"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

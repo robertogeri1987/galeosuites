@@ -1,0 +1,43 @@
+.wishlist {
+
+    &__box {
+
+        [data-wishlist-icon-like] {
+            &.hidden {
+              display: none;
+            }
+        }
+
+        &[data-exists="yes"] {
+            [data-wishlist-icon-like],
+            [data-wishlist-icon-liked] {
+                visibility: visible;
+                opacity: 1;
+                border: 0;
+            }
+
+            [data-wishlist-icon-liked],
+            .wishlist__tooltiptext.add {
+                transform: scale(1), translate(-50%, -50%);
+                visibility: visible;
+                opacity: 1;
+            }
+            [data-wishlist-icon-like],
+            .wishlist__tooltiptext.remove {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
+        [data-wishlist-icon-like],
+        [data-wishlist-icon-liked] {
+            pointer-events: none;
+
+            &.pulse {
+                transform: scale(1);
+                // animation: pulse 1s infinite;
+            }
+        }
+    }
+
+}

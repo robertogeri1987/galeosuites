@@ -1,0 +1,27 @@
+{
+	"name": "acf/titolo-testo-immagine",
+	"title": "Titolo Testo Immagine",
+	"description": "A custom titolo-testo-immagine block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"titolo-testo-immagine"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

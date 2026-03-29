@@ -1,0 +1,27 @@
+.widget-title {
+	@apply title-xs mb-hhgap;
+}
+
+.widget {
+
+    ul>li:last-of-type:not(.gfield) {
+        margin-bottom: 0;
+    }
+    ul>li {
+			@apply mb-[5px] pb-[5px];
+    }
+    ul>li:last-of-type {
+        padding-bottom: 0;
+				@apply pb-0;
+    }
+    ol>li {
+				@apply list-decimal list-inside pl-[5px] rem:-indent-[18px]
+    }
+    li li {
+			@apply mb-[5px] p-0;
+    }
+
+		li a {
+			@apply transition-all duration-500 hover:text-primary;
+		}
+}

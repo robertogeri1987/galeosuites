@@ -1,0 +1,32 @@
+{
+	"name": "acf/premi",
+	"title": "Premi e Riconoscimenti",
+	"description": "A custom premi block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"premi"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": [
+			"none",
+			"wide",
+			"full"
+		],
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

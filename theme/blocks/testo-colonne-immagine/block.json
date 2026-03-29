@@ -1,0 +1,28 @@
+{
+	"name": "acf/testo-colonne-immagine",
+	"title": "Testo in colonne con immagine",
+	"description": "A custom testo-colonne-immagine block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"testo-colonne-immagine"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

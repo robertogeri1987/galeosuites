@@ -1,0 +1,79 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
+				},
+				{
+					"slug": "black",
+					"color": "#000000",
+					"name": "Black"
+				},
+				{
+					"slug": "dark",
+					"color": "#8a8a8a",
+					"name": "Dark"
+				},
+				{
+					"slug": "darker",
+					"color": "#18293a",
+					"name": "Darker"
+				},
+				{
+					"slug": "light",
+					"color": "#EBF5FF",
+					"name": "Light"
+				},
+				{
+					"slug": "light-gray",
+					"color": "#d7d7d7",
+					"name": "Light Gray"
+				},
+				{
+					"slug": "background",
+					"color": "#EBF5FF",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#000000",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#B2A553",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#0c9f7e",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#b9bec0",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "alert",
+					"color": "#D40617",
+					"name": "Alert"
+				},
+				{
+					"slug": "success",
+					"color": "#0c9f7e",
+					"name": "Success"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "var(--smaller-content)",
+			"wideSize": "var(--layout-content)"
+		}
+	}
+}

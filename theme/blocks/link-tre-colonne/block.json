@@ -1,0 +1,28 @@
+{
+	"name": "acf/link-tre-colonne",
+	"title": "Blocco Tre Colonne Link e immagini",
+	"description": "A custom link-tre-colonne block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"link-tre-colonne"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

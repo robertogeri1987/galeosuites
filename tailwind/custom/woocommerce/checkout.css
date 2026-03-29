@@ -1,0 +1,136 @@
+.woocommerce-checkout {
+
+	h3 {
+		@apply title-xs;
+	}
+	.page-header {
+		@apply md:col-span-12;
+	}
+
+	.place-order .button {
+		@apply base-button;
+	}
+
+	.shop_table {
+		border-spacing: 0;
+		border-width: 0;
+
+		tbody {
+			@apply grid grid-cols-1 gap-gap;
+		}
+
+		tr {
+			@apply grid grid-cols-2 gap-gap;
+		}
+
+		td {
+			border-spacing: 0;
+			border-width: 0;
+			padding: 0;
+			@apply text-right;
+		}
+	}
+	.shop_table th {
+		@apply font-normal p-0;
+	}
+}
+
+.form-row {
+	input:not([type="checkbox"]):not([type="radio"]) {
+		@apply base-input w-full;
+	}
+	textarea {
+		@apply base-textarea w-full;
+	}
+	label {
+		@apply block mb-gap text-sm;
+	}
+}
+.woocommerce-input-wrapper {
+	@apply block max-w-full;
+}
+.form-row-wide {
+	@apply col-span-2 mt-2gap;
+}
+
+.wc-block-components-checkout-place-order-button {
+	@apply base-button;
+}
+
+.woocommerce-billing-fields__field-wrapper {
+	@apply grid grid-cols-2 gap-hhgap;
+
+}
+.woocommerce-form-coupon-toggle {
+	@apply mb-gap;
+}
+.checkout_coupon {
+	@apply mb-gap;
+}
+#customer_details {
+	@apply md:row-span-3;
+}
+#order_review_heading {
+	@apply md:col-start-2 md:row-start-1;
+}
+.woocommerce-checkout-review-order {
+	@apply md:col-start-2 md:row-start-2;
+}
+
+#place_order {
+	@apply w-full mt-hgap;
+}
+
+.woocommerce-additional-fields {
+	@apply mt-gap;
+}
+
+.woocommerce-checkout .woocommerce-invalid-required-field span.error {
+	display: block !important;
+	@apply text-alert font-bold;
+
+}
+.woocommerce-checkout .woocommerce-invalid-required-field input {
+	@apply !border-b-alert;
+}
+
+.woocommerce-NoticeGroup-checkout {
+	@apply md:col-span-12 max-w-[calc(100%-40px)];
+}
+.woocommerce-NoticeGroup-checkout .woocommerce-error {
+}
+
+.woocommerce-checkout .woocommerce-billing-fields > h3 {
+  display: none;
+}
+
+.woocommerce-shipping-methods {
+	input {
+		display: none;
+	}
+	label {
+		display: none;
+	}
+	input:checked + label {
+		@apply block;
+	}
+}
+
+#ship-to-different-address {
+	@apply hidden;
+}
+
+.wc_payment_methods {
+	@apply grid grid-cols-1 gap-gap;
+}
+.wc-stripe-card-icons-container {
+	@apply ml-auto;
+}
+
+.place-order .form-row label {
+	@apply font-normal mb-0;
+
+	a {
+		@apply underline;
+	}
+}

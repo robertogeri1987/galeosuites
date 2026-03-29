@@ -1,0 +1,28 @@
+{
+	"name": "acf/image-text-two-columns",
+	"title": "Immagine / Testo su due colonne",
+	"description": "A custom image-text-two-columns block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"image-text-two-columns"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

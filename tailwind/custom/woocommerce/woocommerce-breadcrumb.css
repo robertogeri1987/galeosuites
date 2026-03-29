@@ -1,0 +1,13 @@
+.woocommerce-breadcrumb {
+	@apply text-sm text-foreground py-hgap tracking-widest mt-gap md:mt-0;
+
+	a {
+		@apply font-normal text-[#8b8b8b] hover:text-foreground transition-all duration-500 tracking-normal;
+	}
+	.breadcrumb-sep {
+		@apply stroke-[#8b8b8b] fill-none;
+	}
+	.breadcrumb-sep:last-of-type {
+		@apply stroke-black fill-none;
+	}
+}

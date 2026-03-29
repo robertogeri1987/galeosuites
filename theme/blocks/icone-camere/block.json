@@ -1,0 +1,28 @@
+{
+	"name": "acf/icone-camere",
+	"title": "Icone Camere",
+	"description": "A custom icone-camere block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"icone-camere"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

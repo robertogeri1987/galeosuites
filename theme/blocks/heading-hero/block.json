@@ -1,0 +1,27 @@
+{
+	"name": "acf/heading-hero",
+	"title": "Heading Hero",
+	"description": "A custom heading-hero block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"heading-hero"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}

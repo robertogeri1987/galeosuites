@@ -1,0 +1,28 @@
+{
+	"name": "acf/slider-full",
+	"title": "Slider Full",
+	"description": "A custom slider-full block.",
+	"category": "theme",
+	"icon": "excerpt-view",
+	"keywords": [
+		"slider-full"
+	],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block.php"
+	},
+	"supports": {
+		"align": false,
+		"mode": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"mode": {
+			"type": "string",
+			"default": "edit"
+		}
+	}
+}
