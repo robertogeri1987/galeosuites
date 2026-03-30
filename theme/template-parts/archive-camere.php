@@ -18,7 +18,7 @@ $more       = '&hellip;';
 
 ?>
 
-<article class="block relative md:col-span-3" data-gs-reveal="reveal_fromBottom">
+<article class="block relative md:col-span-6 gap-gap">
 
 	<a class="archive-post__link transition-all duration-500 hover:opacity-70"
 		href="<?php echo esc_url($entry_link); ?>"
@@ -35,7 +35,7 @@ $more       = '&hellip;';
 			</div>
 		<?php endif; ?>
 
-		<h2 class="archive-post__entry-title title-md" itemprop="headline">
+		<h2 class="archive-post__entry-title title-xl mt-2gap" itemprop="headline">
 			<a class="archive-post__link transition-all duration-500 hover:text-primary"
 				href="<?php echo esc_url($entry_link); ?>"
 				aria-hidden="true"
@@ -43,20 +43,22 @@ $more       = '&hellip;';
 				<?php the_title(); ?>
 			</a>
 		</h2>
-		<?php 
-		if (have_rows('dettagli')):
-			while (have_rows('dettagli')) : the_row();
-				$icon = get_sub_field('icona');
-				$text = get_sub_field('testo');
-				?>
-				<div class="archive-post__details flex items-center gap-2 text-sm mb-gap">
-					<?php echo ap_svg($icon, '', 'w-[18px] h-[18px] fill-primary'); ?>
-					<span><?php echo esc_html($text); ?></span>
-				</div>
-				<?php
-			endwhile;
-		endif;
-		?>
+		<div class="flex gap-gap">
+			<?php
+			if (have_rows('dettagli')):
+				while (have_rows('dettagli')) : the_row();
+					$icon = get_sub_field('icona');
+					$text = get_sub_field('testo');
+			?>
+					<div class="archive-post__details flex items-center gap-2 text-sm mb-gap">
+						<?php echo ap_svg($icon, '', 'w-[18px] h-[18px] fill-primary'); ?>
+						<span><?php echo esc_html($text); ?></span>
+					</div>
+			<?php
+				endwhile;
+			endif;
+			?>
+		</div>
 		<div class="archive-post__entry-content prose rem:mt-[5px]" itemprop="text">
 			<?php
 			$terms = get_the_terms(get_the_ID(), 'categoria_camere');

@@ -26,10 +26,10 @@ class TitoloTestoImmagine extends BaseBlock {
 
 		echo $this->container; ?>
 
-		<div class="md:max-w-[620px] text-center mx-auto">
+		<div class="md:max-w-[920px] text-center mx-auto">
 			<?php
-			new \Components\Title( 'titolo', ' uppercase', 'title-lg' );
-			new \Components\Title( 'sottotitolo', '' );
+			new \Components\Title( 'titolo', ' uppercase', 'title-4xl' );
+			new \Components\Title( 'sottotitolo', 'mt-4gap' );
 			new \Components\Text( 'testo', ' md:mt-gap' );
 			new \Components\LinkWithImage( 'cta', ' mt-gap block transform transition-transform duration-300 hover:translate-x-2', true, ap_svg( 'arrow-button', null, 'rem:h-[74px] rem:w-[74px] fill-primary hover:fill-hover stroke-current inline', true ) );
 			?>

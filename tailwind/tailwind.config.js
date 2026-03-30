@@ -76,6 +76,8 @@ module.exports = {
 				'xl': rem(32)[32],
 				'2xl': rem(42)[42],
 				'3xl': rem(55)[55],
+				'4xl': rem(75)[75],
+				'5xl': rem(95)[95],
 			},
 			rootFontsize: `${baseFontSize}px`,
 			fontFamily: {

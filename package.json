@@ -54,7 +54,7 @@
 		"watch:webpack": "npm run development:webpack -- --watch",
 		"watch:esbuild": "npm run development:esbuild -- --watch",
 		"watch": "run-p watch:**",
-		"watch:browser-sync": "browser-sync start --proxy \"http://prestige-rooms.local\" --files \"theme\" --no-notify --no-inject-changes",
+		"watch:browser-sync": "browser-sync start --proxy \"http://galeosuites.local\" --files \"theme\" --no-notify --no-inject-changes",
 		"lint:eslint": "npx eslint theme/",
 		"lint:prettier": "npx prettier --check tailwind/**/*.css",
 		"lint": "run-p lint:*",

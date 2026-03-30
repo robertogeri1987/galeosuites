@@ -49,6 +49,29 @@
             "prefix_name": 1
         },
         {
+            "key": "field_69c941e6f3044",
+            "label": "Testo",
+            "name": "testo_hero",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "clone": [
+                "group_65426bb5ce89f"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
             "key": "field_66af7635e4c42",
             "label": "Usa Slider",
             "name": "usa_slider",
@@ -551,5 +574,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "advanced",
-    "modified": 1737726546
+    "modified": 1774797753
 }
