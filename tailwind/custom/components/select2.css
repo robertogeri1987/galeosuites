@@ -10,7 +10,7 @@
 		cursor: pointer;
 		display: block;
 		user-select: none;
-		@apply select-h;
+		@apply select-h mobile:flex mobile:items-center;
 
 		.select2-selection__rendered {
 			display: block;
@@ -100,7 +100,7 @@
 }
 
 .select2-results__option {
-	@apply select-min-h select-leading select-padding select-text;
+	@apply select-min-h select-leading select-padding select-text flex items-center justify-center text-center;
   user-select: none;
   -webkit-user-select: none;
 }

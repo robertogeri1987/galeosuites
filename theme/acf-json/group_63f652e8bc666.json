@@ -54,21 +54,18 @@
                 "class": "",
                 "id": ""
             },
-            "relevanssi_exclude": 0,
             "wpml_cf_preferences": 3,
             "post_type": [
                 "page",
                 "post",
-                "recensioni",
-                "distributori",
-                "sistema",
-                "prodotti-goldnote"
+                "camere"
             ],
             "post_status": "",
             "taxonomy": "",
             "allow_archives": 1,
             "multiple": 0,
-            "allow_null": 0
+            "allow_null": 0,
+            "allow_in_bindings": 1
         },
         {
             "key": "field_63f6542de4e05",
@@ -345,5 +342,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "localization",
-    "modified": 1736519408
+    "modified": 1779802538
 }

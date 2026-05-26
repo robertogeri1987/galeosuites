@@ -9,12 +9,12 @@
 namespace Classes\Core;
 
 // If this file is called directly, abort.
-if (! defined('WPINC')) {
+if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-class Nav
-{
+class Nav {
+
 
 	public $xData;
 	public $overlay;
@@ -34,10 +34,9 @@ class Nav
 	public $menuIconClasses;
 	public $currentLinkTarget;
 
-	public function __construct($menu = 'primary')
-	{
+	public function __construct( $menu = 'primary' ) {
 		global $wp;
-		$this->currentPageLink = home_url($wp->request) . '/';
+		$this->currentPageLink = home_url( $wp->request ) . '/';
 		// $this->currentPageLink = add_query_arg( $wp->query_vars, home_url( $wp->request ) ); // Includes query string
 		$this->menu = $menu;
 
@@ -50,7 +49,7 @@ class Nav
 
 		$this->navClasses = 'mobile:fixed flex items-center w-screen overflow-visible mobile:flex-col mobile:-top-[100%] mobile:h-[calc(100%-50px)] mobile:mt-[50px] mobile:left-0 mobile:bg-light desk:z-auto desk:layout-container desk:mx-auto desk:left-auto mix-blend-normal desk:h-[88px] desk:items-end desk:pb-gap';
 
-		if ($this->menu !== 'primary') :
+		if ( $this->menu !== 'primary' ) :
 			// all other menus
 			$this->xData          = 'x-data';
 			$this->navProperties  = ' itemtype="https://schema.org/SiteNavigationElement"';
@@ -72,41 +71,39 @@ class Nav
 		$this->menuIconClasses         = ' rem:h-[20px] rem:w-[20px] fill-current rem:ml-[5px]';
 	}
 
-	public function getIsCurrent($link)
-	{
-		if ($link) {
+	public function getIsCurrent( $link ) {
+		if ( $link ) {
 			$this->currentPageLink === $link['url'] ? $this->isCurrent = $this->isCurrentClasses : $this->isCurrent = '';
 		} else {
 			$this->isCurrent = '';
 		}
 	}
 
-	public function specialItem($itemType)
-	{
-		if ($itemType === 'Account') {
-			new \Components\Nav\AccountWidget($this);
+	public function specialItem( $itemType ) {
+		if ( $itemType === 'Account' ) {
+			new \Components\Nav\AccountWidget( $this );
 		}
-		if ($itemType === 'Ricerca') {
-			new \Components\Nav\SearchWidget($this);
+		if ( $itemType === 'Ricerca' ) {
+			new \Components\Nav\SearchWidget( $this );
 		}
-		if ($itemType === 'Carrello') {
-			if (class_exists('WooCommerce')) {
-				new \Components\Nav\NavigationItemCart($this);
+		if ( $itemType === 'Carrello' ) {
+			if ( class_exists( 'WooCommerce' ) ) {
+				new \Components\Nav\NavigationItemCart( $this );
 			}
 		}
-		if ($itemType === 'Wishlist') {
-			new \Components\Nav\WishlistWidget($this);
+		if ( $itemType === 'Wishlist' ) {
+			new \Components\Nav\WishlistWidget( $this );
 		}
-		if ($itemType === 'Lingua') { ?>
+		if ( $itemType === 'Lingua' ) { ?>
 			<li class="mobile:flex mobile:flex-col" x-data="menuItem" x-ref="menuItem">
-				<div>
+				<div class="mobile:flex mobile:pl-hgap mobile:pt-hhgap">
 					<select data-lang-select onchange="location = this.value;">
-						<option value="#" selected disabled><?php _e('Scegli la lingua', 'ap-wp-theme-tw'); ?></option>
+						<option value="#" selected disabled><?php _e( 'Scegli la lingua', 'ap-wp-theme-tw' ); ?></option>
 						<?php
-						$languages = icl_get_languages('skip_missing=1&orderby=code');
-						foreach ($languages as $language) {
+						$languages = icl_get_languages( 'skip_missing=1&orderby=code' );
+						foreach ( $languages as $language ) {
 							echo '<option value="' . $language['url'] . '"';
-							if ($language['active']) {
+							if ( $language['active'] ) {
 								echo ' selected';
 							}
 							echo '>' . $language['translated_name'] . '</option>';
@@ -115,12 +112,11 @@ class Nav
 					</select>
 				</div>
 			</li>
-		<?php
+			<?php
 		}
 	}
 
-	public function render()
-	{
+	public function render() {
 		echo $this->beforeMenuArea;
 		?>
 		<nav
@@ -129,11 +125,11 @@ class Nav
 			<?php echo $this->xData; ?>
 			<?php echo $this->navProperties; ?>
 			:class="!$store.header.menuOpen && $store.header.isWhite && !$store.header.hasScrolled && !$store.header.isScrolling ? 'text-white' : 'text-black' ">
-			<?php new \Components\Nav\NavigationMenuUl($this); ?>
-			<?php if ($this->overlay) : ?>
+			<?php new \Components\Nav\NavigationMenuUl( $this ); ?>
+			<?php if ( $this->overlay ) : ?>
 				<?php new \Components\Nav\Overlay(); ?>
 			<?php endif; ?>
 		</nav>
-<?php
+		<?php
 	}
 }

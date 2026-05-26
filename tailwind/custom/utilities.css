@@ -127,13 +127,13 @@
 		@apply bg-transparent;
 	}
 	.select-selected {
-		@apply bg-black text-white;
+		@apply bg-background text-foreground;
 	}
 	.select-highlighted {
-		@apply text-white bg-black cursor-pointer;
+		@apply text-white bg-[#062441] cursor-pointer;
 	}
 	.select-text {
-		@apply text-foreground;
+		@apply text-foreground label;
 	}
 	.select-multiple-min-h {
 		@apply min-h-[32px];
@@ -145,7 +145,7 @@
 		@apply text-foreground/50;
 	}
 	.select-disabled-bg {
-		@apply bg-black/20;
+		@apply bg-primary/20;
 	}
 	.select2-selection__rendered {
 		@apply font-normal;

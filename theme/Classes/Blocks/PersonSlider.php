@@ -38,12 +38,15 @@ class PersonSlider extends BaseBlock {
 						<?php
 						while ( have_rows( 'slide' ) ) :
 							the_row();
+							$link = Utils::GetLinkAndTarget( 'link_slide', false );
 							?>
 							<div class="swiper-slide h-auto">
 								<div class="flex flex-col h-full">
-									<?php Utils::SimpleACFImg( get_sub_field( 'immagine' ), 'full', ' w-full h-auto mt-gap' ); ?>
-									<?php new \Components\Title( 'titolo', ' ', 'title-md mb-gap mt-2gap', false ); ?>
-									<?php new \Components\Text( 'testo', ' mb-auto', false ); ?>
+									<?php Utils::LinkOpen( $link, 'w-full', false, true ); ?>
+										<?php Utils::SimpleACFImg( get_sub_field( 'immagine' ), 'full', ' w-full h-auto mt-gap' ); ?>
+										<?php new \Components\Title( 'titolo', ' ', 'title-md mb-gap mt-2gap', false ); ?>
+										<?php new \Components\Text( 'testo', ' mb-auto', false ); ?>
+									<?php Utils::LinkClose( $link ); ?>
 								</div>
 							</div>
 							<?php
