@@ -59,7 +59,7 @@
 	}
 
 	.base-button, .button {
-		@apply text-white uppercase bg-black hover:bg-primary hover:cursor-pointer rounded-none transition-all duration-500 px-[30px] py-[17px] inline-block z-[1] relative;
+		@apply text-white uppercase bg-primary hover:bg-[#004b87] hover:cursor-pointer rounded-full transition-all duration-500 px-[30px] py-[12px] inline-block z-[1] relative;
 
 		&:disabled {
 			@apply bg-black/70 cursor-not-allowed;
@@ -67,7 +67,7 @@
 	}
 
 	.base-button--invert {
-		@apply text-black bg-white hover:bg-primary;
+		@apply text-primary hover:text-white bg-transparent hover:bg-primary border-[1px] border-primary;
 	}
 	.base-button--primary {
 		@apply text-white bg-primary hover:bg-black;

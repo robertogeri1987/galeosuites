@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 3,
             "layout": "table",
             "pagination": 0,
             "min": 0,
@@ -39,11 +39,26 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 3,
                     "choices": {
                         "pet": "Pet",
                         "persone": "Persone",
-                        "metri": "Metri"
+                        "metri": "Metri",
+                        "14": "Adult",
+                        "bagno": "Bagno",
+                        "bollitore": "Bollitore",
+                        "caffe": "Caffe",
+                        "cassaforte": "Cassaforte",
+                        "euro": "Euro",
+                        "frigo": "Frigo",
+                        "letto": "Letto",
+                        "p": "Parcheggio",
+                        "pavimento": "Moquette",
+                        "phon": "Asciugacapelli",
+                        "rifiniture": "Rifiniture",
+                        "tel": "Telefono",
+                        "tv": "Tv",
+                        "wifi": "Wifi"
                     },
                     "default_value": false,
                     "return_format": "value",
@@ -69,7 +84,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "default_value": "",
                     "maxlength": "",
                     "allow_in_bindings": 0,
@@ -100,5 +115,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "localization",
-    "modified": 1773333413
+    "modified": 1774937711
 }

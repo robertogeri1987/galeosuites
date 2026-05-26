@@ -24,7 +24,7 @@ $more       = '&hellip;';
 		href="<?php echo esc_url($entry_link); ?>"
 		aria-hidden="true"
 		tabindex="-1">
-		<?php \Classes\Core\Utils::SimpleFeaturedImg('thumbnail'); ?>
+		<?php \Classes\Core\Utils::SimpleFeaturedImg('full'); ?>
 	</a>
 
 	<section class="archive-post__entry-container">
@@ -35,7 +35,7 @@ $more       = '&hellip;';
 			</div>
 		<?php endif; ?>
 
-		<h2 class="archive-post__entry-title title-xl mt-2gap" itemprop="headline">
+		<h2 class="archive-post__entry-title title-xl mt-gap" itemprop="headline">
 			<a class="archive-post__link transition-all duration-500 hover:text-primary"
 				href="<?php echo esc_url($entry_link); ?>"
 				aria-hidden="true"
@@ -43,7 +43,7 @@ $more       = '&hellip;';
 				<?php the_title(); ?>
 			</a>
 		</h2>
-		<div class="flex gap-gap">
+		<div class="flex gap-gap mt-gap">
 			<?php
 			if (have_rows('dettagli')):
 				while (have_rows('dettagli')) : the_row();
@@ -51,8 +51,8 @@ $more       = '&hellip;';
 					$text = get_sub_field('testo');
 			?>
 					<div class="archive-post__details flex items-center gap-2 text-sm mb-gap">
-						<?php echo ap_svg($icon, '', 'w-[18px] h-[18px] fill-primary'); ?>
-						<span><?php echo esc_html($text); ?></span>
+						<?php echo ap_svg($icon, '', 'w-[22px] h-[22px] fill-primary'); ?>
+						<span class="text-[16px]"><?php echo esc_html($text); ?></span>
 					</div>
 			<?php
 				endwhile;
@@ -73,6 +73,16 @@ $more       = '&hellip;';
 				echo implode(', ', $links);
 			}
 			?>
+		</div>
+		<div>
+			<a class="base-button base-button--invert mt-gap"
+				href="/contatti/">
+				<?php esc_html_e('Richiedi', 'ap-wp-theme'); ?>
+			</a>
+			<a class="base-button mt-gap"
+				href="/contatti/">
+				<?php esc_html_e('Prenota', 'ap-wp-theme'); ?>
+			</a>
 		</div>
 
 	</section>

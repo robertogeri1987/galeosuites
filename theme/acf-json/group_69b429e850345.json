@@ -89,7 +89,22 @@
                     "choices": {
                         "pet": "Pet",
                         "persone": "Persone",
-                        "metri": "Metri"
+                        "metri": "Metri",
+                        "14": "Adult",
+                        "bagno": "Bagno",
+                        "bollitore": "Bollitore",
+                        "caffe": "Caffe",
+                        "cassaforte": "Cassaforte",
+                        "euro": "Euro",
+                        "frigo": "Frigo",
+                        "letto": "Letto",
+                        "p": "Parcheggio",
+                        "pavimento": "Moquette",
+                        "phon": "Asciugacapelli",
+                        "rifiniture": "Rifiniture",
+                        "tel": "Telefono",
+                        "tv": "Tv",
+                        "wifi": "Wifi"
                     },
                     "default_value": false,
                     "return_format": "value",
@@ -146,5 +161,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "localization",
-    "modified": 1773415083
+    "modified": 1774937639
 }

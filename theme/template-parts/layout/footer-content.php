@@ -10,7 +10,7 @@
 
 ?>
 
-<footer id="colophon" class="bg-black text-white" data-main-footer>
+<footer id="colophon" class="bg-primary text-white" data-main-footer>
 	<div class="layout-container mx-auto grid md:grid-cols-12 gap-gap pt-2gap md:pt-3gap">
 
 		<?php do_action( 'ap_wp_before_footer_widgets_area' ); ?>
@@ -76,11 +76,11 @@
 				&copy;
 				<?php
 				echo date( 'Y' );
-				echo 'AZIENDA AGRICOLA LA GRAMIGNA di Renata Conti<span class="mr-gap"></span>Via di Gricigliano 43, 50065 Pontassieve FI<span class="mr-gap"></span>P.IVA 05786730480';
+				echo ' Galeo Suites - Via del Pescatore 25, 30122 Venezia, Italia - P.IVA 04294140992';
 				?>
 			</div>
 			<div>
-				designed by <a href="https://www.lottstudio.com/" rel="noopener" target="_blank" class="font-bold">Lott Studio</a> developed by <a href="https://www.infloweb.it/" rel="noopener" target="_blank" class="font-bold">Infloweb</a>
+				designed by <a href="https://www.infloweb.it/" rel="noopener" target="_blank" class="font-bold">Infloweb</a>
 			</div>
 		</div>
 

@@ -18,8 +18,8 @@
 				<span class="sr-only"><?php bloginfo( 'name' ); ?></span>
 				<h1 class="text-3xl font-bold leading-none whitespace-no-wrap my-0 !mt-0" x-data x-cloak>
 					<a class="text-white" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img x-show="!$store.header.isWhite || $store.header.isScrolling || $store.header.hasScrolled || $store.header.menuOpen" width="143" height="63" class="mdd:w-[100px] mdd:h-auto" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.svg'; ?>">
-						<img x-show="!$store.header.menuOpen && $store.header.isWhite && !$store.header.isScrolling && !$store.header.hasScrolled" width="143" height="63" class="mdd:w-[100px] mdd:h-auto" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo-dark.svg'; ?>">
+						<img x-show="!$store.header.isWhite || $store.header.isScrolling || $store.header.hasScrolled || $store.header.menuOpen" width="113" height="63" class="mdd:w-[100px] mdd:h-auto" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.svg'; ?>">
+						<img x-show="!$store.header.menuOpen && $store.header.isWhite && !$store.header.isScrolling && !$store.header.hasScrolled" width="113" height="63" class="mdd:w-[100px] mdd:h-auto" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo-dark.svg'; ?>">
 					</a>
 				</h1>
 				<?php
@@ -28,8 +28,8 @@
 				<span class="sr-only"><?php bloginfo( 'name' ); ?></span>
 				<p class="text-3xl font-bold leading-none whitespace-no-wrap my-0 !mt-0" x-data x-cloak>
 					<a class="text-white" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img x-show="!$store.header.isWhite || $store.header.isScrolling || $store.header.hasScrolled || $store.header.menuOpen" width="143" height="63" class="mdd:w-[100px] mdd:h-auto" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.svg'; ?>">
-						<img x-show="!$store.header.menuOpen && $store.header.isWhite && !$store.header.isScrolling && !$store.header.hasScrolled" width="143" height="63" class="mdd:w-[100px] mdd:h-auto" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo-dark.svg'; ?>">
+						<img x-show="!$store.header.isWhite || $store.header.isScrolling || $store.header.hasScrolled || $store.header.menuOpen" width="113" height="63" class="mdd:w-[100px] mdd:h-auto" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.svg'; ?>">
+						<img x-show="!$store.header.menuOpen && $store.header.isWhite && !$store.header.isScrolling && !$store.header.hasScrolled" width="113" height="63" class="mdd:w-[100px] mdd:h-auto" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo-dark.svg'; ?>">
 					</a>
 				</p>
 				<?php
