@@ -15,7 +15,7 @@ if ( ! defined( 'WPINC' ) ) {
 if ( ! defined( 'GLOBAL_THEME_VERSION' ) ) {
 	// Define theme constants.
 	define( 'GLOBAL_THEME_NAME', 'AP WP Theme' );
-	define( 'GLOBAL_THEME_VERSION', '1.0.2022-12-06-a38' );
+	define( 'GLOBAL_THEME_VERSION', '1.0.2022-12-06-a39' );
 }
 
 // Enable predictive search functionality

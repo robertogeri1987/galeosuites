@@ -30,7 +30,7 @@
 							if ( have_rows( 'voce_sezione', 'options' ) ) :
 								while ( have_rows( 'voce_sezione', 'options' ) ) :
 									the_row();
-									$classes = ' text-xs hover:text-primary transition-all duration-300';
+									$classes = ' text-xs hover:underline transition-all duration-300';
 									if ( get_sub_field( 'testo_grigio' ) ) {
 										$classes .= ' opacity-70';
 									}
