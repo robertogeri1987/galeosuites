@@ -484,6 +484,12 @@
 }
 
 /* Language switcher in nav: match menu links size (label-menu) */
+.lang-switcher .select2-container {
+	/* select2 sets an inline px width based on the native select (which reserves
+	   space for the OS arrow); shrink it to its content so the gap to the next
+	   menu item matches the others. */
+	width: auto !important;
+}
 .lang-switcher .select2-container--default .select2-selection--single {
 	@apply flex items-center;
 }
