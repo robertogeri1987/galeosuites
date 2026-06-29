@@ -484,6 +484,9 @@
 }
 
 /* Language switcher in nav: match menu links size (label-menu) */
+.lang-switcher .select2-container--default .select2-selection--single {
+	@apply flex items-center;
+}
 .lang-switcher .select2-container--default .select2-selection--single .select2-selection__rendered {
 	@apply label-menu;
 }

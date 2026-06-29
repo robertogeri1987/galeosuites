@@ -19,7 +19,7 @@
 			<div class="md:col-span-2">
 				<img width="113" height="79" class="w-[113px] mdd:w-[100px] h-auto brightness-0 invert" alt="Galeo Suites" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.svg'; ?>">
 			</div>
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-gap md:col-span-5">
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-gap md:col-span-5">
 				<?php
 				if ( have_rows( 'sezione_footer', 'options' ) ) :
 					while ( have_rows( 'sezione_footer', 'options' ) ) :
@@ -47,6 +47,22 @@
 					endwhile;
 				endif;
 				?>
+				<div class="flex flex-col gap-4">
+					<div>
+						Galeo Srl.<br>
+						<a href="https://www.google.com/maps/search/?api=1&query=<?php echo rawurlencode( 'Piazza Giacomo Puccini 5, 50144 Firenze, FI, Toscana' ); ?>" rel="noopener" target="_blank">
+							Piazza Giacomo Puccini 5<br>
+							50144 Firenze, FI
+						</a>
+					</div>
+					<div>
+						<?php $email = antispambot( 'galeo.suites@gmail.com' ); ?>
+						<a href="mailto:<?php echo esc_attr( $email ); ?>"><?php echo esc_html( $email ); ?></a>
+					</div>
+					<div>
+						Numero di telefono:<br> <a href="tel:+393273581385">327 3581385</a>
+					</div>
+				</div>
 			</div>
 		</div>
 

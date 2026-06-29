@@ -38,8 +38,16 @@ class NavigationMenuUl {
 
 				endwhile;
 			endif;
+
+			// "Prenota" button as the last item of the primary menu.
+			if ( $nav->prefix === '' ) {
+				ReservationButton::button( $nav );
+			}
 			?>
 		</ul>
 		<?php
+		if ( $nav->prefix === '' ) {
+			ReservationButton::popup();
+		}
 	}
 }
