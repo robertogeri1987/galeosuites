@@ -195,6 +195,10 @@
 		@apply text-xs uppercase leading-[16px];
 	}
 
+	.label-menu {
+		@apply text-xs desk:text-sm uppercase leading-[16px];
+	}
+
 	.title-xs {
 		@apply font-sans-serif text-sm leading-[1.3] md:text-lg;
 	}

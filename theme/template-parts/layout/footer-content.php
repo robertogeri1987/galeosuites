@@ -17,7 +17,7 @@
 
 		<div class="grid grid-cols-1 md:grid-cols-7 gap-gap md:pb-4gap md:col-span-9">
 			<div class="md:col-span-2">
-				<img width="143" height="63" class="mdd:w-[120px] h-auto max-w-[128px]" alt="Gramigna Logo Black" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo-dark.svg'; ?>">
+				<img width="113" height="79" class="w-[113px] mdd:w-[100px] h-auto brightness-0 invert" alt="Galeo Suites" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.svg'; ?>">
 			</div>
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-gap md:col-span-5">
 				<?php

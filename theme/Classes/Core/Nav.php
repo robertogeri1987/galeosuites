@@ -66,7 +66,7 @@ class Nav {
 		$this->isCurrentSubClasses     = 'text-primary';
 		$this->navigationMenuUlClasses = 'w-full mobile:h-screen mobile:overflow-y-auto mobile:pb-dgap desk:flex desk:items-start desk:gap-gap';
 		$this->navigationItemClasses   = 'mobile:flex mobile:flex-col ';
-		$this->navigationLinkClasses   = 'mobile:py-gap mobile:mx-gap mobile:border-b mobile:border-black flex items-center h-full whitespace-no-wrap relative hover:text-primary hover:font-bold label transition-all duration-300 ease-in-out';
+		$this->navigationLinkClasses   = 'mobile:py-gap mobile:mx-gap mobile:border-b mobile:border-black flex items-center h-full whitespace-no-wrap relative hover:text-primary hover:font-bold label-menu transition-all duration-300 ease-in-out';
 		$this->megaMenuClasses         = 'text-[16px] shadow-md z-[20001] block overflow-hidden mobile:left-full mobile:top-0 mobile:bg-light mobile:h-full mobile:overflow-y-scroll mobile:pb-3gap w-full absolute desk:h-auto desk:block desk:pointer-events-none desk:opacity-0 desk:top-[84px] blend bg-light';
 		$this->menuIconClasses         = ' rem:h-[20px] rem:w-[20px] fill-current rem:ml-[5px]';
 	}
@@ -96,7 +96,7 @@ class Nav {
 		}
 		if ( $itemType === 'Lingua' ) { ?>
 			<li class="mobile:flex mobile:flex-col" x-data="menuItem" x-ref="menuItem">
-				<div class="mobile:flex mobile:pl-hgap mobile:pt-hhgap">
+				<div class="lang-switcher mobile:flex mobile:pl-hgap mobile:pt-hhgap">
 					<select data-lang-select onchange="location = this.value;">
 						<option value="#" selected disabled><?php _e( 'Scegli la lingua', 'ap-wp-theme-tw' ); ?></option>
 						<?php
